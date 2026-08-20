@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>makeuo store</title>
+    <link href="https://cdn.fontcdn.ir/font/vazir/Vazir.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>آرایشی‌شاپ</h1>
+            <p>زیبایی با کیفیت، محصولات اصل و حرفه‌ای</p>
+        </header>
+        <div class="filters">
+            <button class="filter-btn active">همه</button>
+            <button class="filter-btn">💄 آرایشی</button>
+            <button class="filter-btn">🧴 مراقبتی</button>
+            <button class="filter-btn">👁️ آرایش چشم</button>
+        </div>
+        <div class="products-grid" id="productsGrid">
+
+            <div class="product-card" data-category="آرایشی">
+                <div class="product-image">
+                    <img src="/pictures/PA.jpg" alt="پالت آرایشی" />
+                </div>
+                <div class="product-title">پالت آرایشی حرفه‌ای</div>
+                <div class="product-category">💄 آرایشی</div>
+                <div class="product-price">450,000 <span>تومان</span></div>
+                <button class="add-to-cart" data-id="1">➕ افزودن به سبد</button>
+            </div>
+
+            <div class="product-card" data-category="مراقبتی">
+                <div class="product-image">
+                    <img src="/pictures/km" alt="کرم مرطوب‌کننده" />
+                </div>
+                <div class="product-title">کرم مرطوب‌کننده روز</div>
+                <div class="product-category">🧴 مراقبتی</div>
+                <div class="product-price">320,000 <span>تومان</span></div>
+                <button class="add-to-cart" data-id="2">➕ افزودن به سبد</button>
+            </div>
+
+            <div class="product-card" data-category="آرایش چشم">
+                <div class="product-image">
+                    <img src="/pictures/SCH.jpg" alt="سایه چشم" />
+                </div>
+                <div class="product-title">سایه چشم</div>
+                <div class="product-category">👁️ آرایش چشم</div>
+                <div class="product-price">280,000 <span>تومان</span></div>
+                <button class="add-to-cart" data-id="3">➕ افزودن به سبد</button>
+            </div>
+
+            <div class="product-card" data-category="آرایشی">
+                <div class="product-image">
+                    <img src="/pictures/RL" alt="رژ لب" />
+                </div>
+                <div class="product-title">رژ لب مات ماندگار</div>
+                <div class="product-category">💄 آرایشی</div>
+                <div class="product-price">190,000 <span>تومان</span></div>
+                <button class="add-to-cart" data-id="4">➕ افزودن به سبد</button>
+            </div>
+
+            <div class="product-card" data-category="آرایشی">
+                <div class="product-image">
+                    <img src="/pictures/KP.jpg" alt="کرم پودر" />
+                </div>
+                <div class="product-title">کرم پودر کاور کامل</div>
+                <div class="product-category">💄 آرایشی</div>
+                <div class="product-price">520,000 <span>تومان</span></div>
+                <button class="add-to-cart" data-id="5">➕ افزودن به سبد</button>
+            </div>
+
+            <div class="product-card" data-category="مراقبتی">
+                <div class="product-image">
+                    <img src="/pictures/VC.jpg" alt="سرم ویتامین C" />
+                </div>
+                <div class="product-title">سرم ویتامین C</div>
+                <div class="product-category">🧴 مراقبتی</div>
+                <div class="product-price">480,000 <span>تومان</span></div>
+                <button class="add-to-cart" data-id="6">➕ افزودن به سبد</button>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            © 2026 فروشگاه آرایشی‌شاپ | همه‌ی حقوق محفوظ است
+        </div>
+    </div>
+    <button class="cart-toggle" id="cartToggle">
+        🛒 سبد خرید
+        <span class="cart-badge" id="cartCount">0</span>
+    </button>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>🛒 سبد خرید</h2>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>جمع کل:</span>
+                <span><span id="cartTotalPrice">0</span> <span class="cart-currency">تومان</span></span>
+            </div>
+            <div class="cart-total-row cart-total-items">
+                <span>تعداد کل:</span>
+                <span id="cartTotalItems">0</span>
+            </div>
+            <button class="cart-clear-btn" id="clearCart">🗑️ خالی کردن سبد</button>
+            <button class="cart-checkout-btn" id="checkoutBtn">💰 ثبت سفارش</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
